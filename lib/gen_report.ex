@@ -1,0 +1,2 @@
+defmodule GenReport do
+end

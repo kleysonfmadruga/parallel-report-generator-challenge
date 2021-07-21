@@ -1,7 +1,7 @@
 defmodule GenReport do
   @moduledoc """
     This module provides a function to generate a report of worked hours per person, per month and per year
-    in a company from multiple files concurrently
+    in a company from multiple files in parallel
   """
 
   @months [
@@ -43,7 +43,7 @@ defmodule GenReport do
   alias GenReport.Parser
 
   @doc """
-    Builds a report of worked hours per person, per month and per year from multiple files concurrently
+    Builds a report of worked hours per person, per month and per year from multiple files in parallel
 
     ## Parameters
     - filenames: A list of CSV file names with the worked time data\n

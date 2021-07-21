@@ -13,7 +13,7 @@ defmodule GenReport.Parser do
         [[...], [...], [...], ...]
   """
   def parse_file(filename) do
-    filename
+    "reports/#{filename}"
     |> File.stream!()
     |> Stream.map(fn elem -> parse_line(elem) end)
   end

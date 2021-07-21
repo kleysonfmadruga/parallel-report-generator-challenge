@@ -68,6 +68,8 @@ defmodule GenReport do
     )
   end
 
+  def build_from_many(), do: {:error, "Please provide a list of file names"}
+
   defp build(filename) do
     filename
     |> Parser.parse_file()
